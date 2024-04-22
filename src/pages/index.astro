@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nabvar from '../components/Navbar.astro';
+import SliderHero from '../components/SliderHero.astro'
+import Hero from '../components/Hero.astro'
+
+const titles = {
+  title1: "Este es un Desing System for Tailwind 1",
+  title2: "este es un Desing System for Tailwind 2",
+  title3: "este es un Desing System for Tailwind 3",
+  title4: "este es un Desing System for Tailwind 4"
+};
+
+
+---
+
+<Layout title="home">
+	<Nabvar/>
+	<h1 class="text-4xl font-bold text-center py-5">{titles.title1}</h1>
+	<SliderHero />
+	
+
+
+
+	
+		
+</Layout>
+
