@@ -1,21 +1,24 @@
-<section>
-    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-        <div class="relative h-64 overflow-hidden rounded-lg sm:h-80 lg:h-full">
-          <img
-            alt=""
-            src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-            class="absolute inset-0 h-full w-full object-cover"
+---
+import { Image} from 'astro:assets';
+import laptop from '../../assets/laptop.webp'
+---
+
+<section class="lg:h-[608] bg-secondary py-14 px-4">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-0 lg:px-8 lg:py-16">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-[6rem]">
+        <div class="relative h-64 overflow-hidden lg:order-first sm:order-last rounded-lg lg:h-full">
+          <Image 
+          class="" 
+          src={laptop} 
+          alt='¿Qué es Desarrollo Web?'
           />
         </div>
   
-        <div class="lg:py-24">
-          <h2 class="text-3xl font-bold sm:text-4xl">Grow your audience</h2>
+        <div class="lg:py-12 sm:py-0 lg:pr-[2.6rem]">
+          <h2 class="text-3xl font-bold sm:text-3xl text-white lg:text-left sm:text-center">¿Qué es Desarrollo Web?</h2>
   
-          <p class="mt-4 text-gray-600">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui hic atque tenetur quis
-            eius quos ea neque sunt, accusantium soluta minus veniam tempora deserunt? Molestiae eius
-            quidem quam repellat.
+          <p class="mt-4 text-white lg:text-lg sm:text-base lg:text-justify sm:text-center py-8">
+            Es la <b>creación</b> de sitios web que permiten a muchas marcas tener una mejor visibilidad frente a sus clientes, pues éstos deben ser rápidos, con una agradable apariencia, un buen desempeño, entre otras cualidades. Para ello, es necesario contar con el conocimiento y la experiencia, y en BytesArtDev lo encontrarás.
           </p>
   
 
