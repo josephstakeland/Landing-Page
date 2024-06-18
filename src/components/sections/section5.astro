@@ -1,21 +1,24 @@
 ---
 import { Image} from 'astro:assets';
-import Gspeed from '../../assets/phone_gspeed.webp';
+import Landing from '../../assets/landingpage.webp';
+import Shape1 from '../../assets/shape1.png'
 ---
 
-<section class="lg:h-[608] py-14 px-4">
-    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-0 lg:px-8 lg:py-16">
+<section class="lg:h-[608] py-14 px-4 bg-shape">
+    <div class="mx-auto max-w-screen-xl px-4 py-8 sm:py-0 lg:px-8 lg:py-16 z-[1]">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-[6rem]">
-        <div class="col-lg-6 lg:order-last sm:order-last rounded-lg">
+        <div class="col-lg-6 lg:order-first sm:order-last rounded-lg">
           <Image 
-          class="lg:max-w-[120%] sm:max-w-[100%]" 
-          src={Gspeed} 
+          class="lg:max-w-[110%] sm:max-w-[100%] " 
+          src={Landing} 
           alt='¿Por qué usar Desarrollo Web en tu marca?'
           />
         </div>
   
-        <div class="lg:py-12 sm:py-0 lg:pr-[2.6rem]">
-          <h2 class="lg:text-[2.6rem] lg:leading-[3.5rem] font-bold sm:text-3xl lg:text-left sm:text-center">¿Por qué usar Desarrollo Web en tu marca?</h2>
+        <div class="sm:py-0 lg:pr-[2.6rem]">
+          <h2 class="lg:text-[2.6rem] lg:leading-[3.5rem] font-bold sm:text-3xl lg:text-left sm:text-center mb-10">¿Qué te ofrece BytesArtsDev?</h2>
+
+          <p class="lg:text-lg sm:text-base lg:text-justify sm:text-left">Nuestra agencia está enfocada en cumplir tus objetivos y en brindarte el mejor servicio que mejorará la relación entre tus clientes y tu marca. Por eso, te ofrecemos:</p>
   
           <div class="list">
             <ul class="mt-8 space-y-8 font-medium">
@@ -28,7 +31,7 @@ import Gspeed from '../../assets/phone_gspeed.webp';
                         </svg>
                     </div>
                     <p class="ml-3 lg:text-lg sm:text-base lg:leading-5 sm:leading-1">
-                      Sitio Web Optimizado.
+                      Identificar estrategias que atraigan clientes a tu web.
                     </p>
                 </li>
                 <li class="flex items-start mt-5 lg:col-span-1 lg:mt-0">
@@ -40,7 +43,7 @@ import Gspeed from '../../assets/phone_gspeed.webp';
                         </svg>
                     </div>
                     <p class="ml-3 lg:text-lg sm:text-base lg:leading-5 sm:leading-1">
-                      Mejora la experiencia del usuario.
+                      Establecer el orden y organización de tu contenido.
                     </p>
                 </li>
                 <li class="flex items-start mt-5 lg:col-span-1 lg:mt-0">
@@ -52,7 +55,7 @@ import Gspeed from '../../assets/phone_gspeed.webp';
                         </svg>
                     </div>
                     <p class="ml-3 lg:text-lg sm:text-base lg:leading-5 sm:leading-1">
-                      Genera más ventas.
+                      Crear tu sitio web desde el inicio de tu proyecto.
                     </p>
                 </li>
                 <li class="flex items-start mt-5 lg:col-span-1 lg:mt-0">
@@ -64,7 +67,7 @@ import Gspeed from '../../assets/phone_gspeed.webp';
                         </svg>
                     </div>
                     <p class="ml-3 lg:text-lg sm:text-base lg:leading-5 sm:leading-1">
-                      Evita la duplicación de sitio web.
+                      Orientar el diseño de tu web con la identidad de tu marca.
                     </p>
                 </li>
                 <li class="flex items-start mt-5 lg:col-span-1 lg:mt-0">
@@ -76,7 +79,7 @@ import Gspeed from '../../assets/phone_gspeed.webp';
                         </svg>
                     </div>
                     <p class="ml-3 lg:text-lg sm:text-base lg:leading-5 sm:leading-1">
-                      Te posiciona en los motores de búsqueda.
+                      Presentar una propuesta visual.
                     </p>
                 </li>
                 <li class="flex items-start mt-5 lg:col-span-1 lg:mt-0">
@@ -88,7 +91,7 @@ import Gspeed from '../../assets/phone_gspeed.webp';
                       </svg>
                   </div>
                   <p class="ml-3 lg:text-lg sm:text-base lg:leading-5 sm:leading-1">
-                    Permite tener una buena imagen.
+                    Desarrollar webs e-commerce para promocionar y vender tus productos.
                   </p>
               </li>
               <li class="flex items-start mt-5 lg:col-span-1 lg:mt-0">
@@ -100,14 +103,40 @@ import Gspeed from '../../assets/phone_gspeed.webp';
                     </svg>
                 </div>
                 <p class="ml-3 lg:text-lg sm:text-base  lg:leading-5 ">
-                  Mejora tu servicio con el cliente.
+                  Posicionar tu web en principales buscadores.
                 </p>
             </li>
             </ul>
         </div>
-  
-
         </div>
       </div>
+
+      <div class="lg:top-[305%] right-[2%] absolute animate-bounce-slow">
+        <Image 
+            class="" 
+            src={Shape1} 
+            alt='shape'
+            />
+      </div>
+
     </div>
+
+
   </section>
+
+  <style>
+
+    .shape-4{
+      top: 242%;
+      position: absolute;
+      z-index: 1;
+
+      right: -3%;
+      -webkit-animation: 20s linear infinite animationFramesOne;
+    animation: 20s linear infinite animationFramesOne;
+    }
+
+    .d-none d-md-block {
+      display: block !important;
+    }
+  </style>
