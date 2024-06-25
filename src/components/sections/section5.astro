@@ -2,6 +2,7 @@
 import { Image} from 'astro:assets';
 import Landing from '../../assets/landingpage.webp';
 import Shape1 from '../../assets/shape1.png'
+import Shape2 from '../../assets/shape2.png'
 ---
 
 <section class="lg:h-[608] py-14 px-4 bg-shape">
@@ -111,10 +112,18 @@ import Shape1 from '../../assets/shape1.png'
         </div>
       </div>
 
-      <div class="lg:top-[305%] right-[2%] absolute animate-bounce-slow">
+      <div class="lg:top-[305%] right-[2%] absolute animate-movebounce">
         <Image 
             class="" 
             src={Shape1} 
+            alt='shape'
+            />
+      </div>
+
+      <div class="lg:top-[370%] right-[66%] absolute animate-movebounce">
+        <Image 
+            class="" 
+            src={Shape2} 
             alt='shape'
             />
       </div>
@@ -126,17 +135,4 @@ import Shape1 from '../../assets/shape1.png'
 
   <style>
 
-    .shape-4{
-      top: 242%;
-      position: absolute;
-      z-index: 1;
-
-      right: -3%;
-      -webkit-animation: 20s linear infinite animationFramesOne;
-    animation: 20s linear infinite animationFramesOne;
-    }
-
-    .d-none d-md-block {
-      display: block !important;
-    }
   </style>

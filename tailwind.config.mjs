@@ -43,6 +43,16 @@ export default {
                         transform: "scale(1)",
                     },
                 },
+
+                "movebounce": {
+                    "0%,100%": {
+                        transform: "translateY(0)",
+                    },
+                
+                    "50%": {
+                        transform: "translateY(20px)",
+                    },
+                }
 	
 			},
 
@@ -50,8 +60,9 @@ export default {
 				"fade-in": "fade-in 1.5s ease-in-out infinite",
 				'tada': 'tada 1s ease-in-out',
 				'drop-in': 'drop-in 1s ease-in-out 0.25s 1',
-				'spin-slow': 'spin 4s linear infinite',
-				'bounce-slow': 'bounce 4s linear infinite',
+				'spin-slow': 'spin 20s linear infinite',
+				'bounce-slow': 'bounce 5s linear infinite',
+                'movebounce': 'bounce 5s linear infinite',
 			},
 
 			screens: {

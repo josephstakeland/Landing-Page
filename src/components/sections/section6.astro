@@ -1,0 +1,93 @@
+---
+import { Image} from 'astro:assets';
+import Team1 from '../../assets/team1.png'
+import Team2 from '../../assets/team2.png'
+---
+<section class="pt-20 px-4 ">
+  <h2 class="lg:text-[2.6rem] lg:leading-[3.5rem] font-bold sm:text-3xl lg:text-center sm:text-center mb-10">Preguntas Frecuentes de Desarrollo Web</h2>
+<div class="grid grid-cols-1 gap-4 lg:grid-cols-4 lg:gap-4">
+  <div class="rounded-lg">
+    <div class="col-lg-6 lg:order-first sm:order-last rounded-lg flex justify-center">
+      <Image 
+      class="" 
+      src={Team1} 
+      alt='Team'
+      />
+    </div>
+  </div>
+  <div class="rounded-lg lg:col-span-2">
+    <faq class="">
+
+      <div x-data="{ openTab: null }" class="accordion">
+        <div class="border rounded-lg overflow-hidden">
+          <button @click="openTab !== 1 ? openTab = 1 : openTab = null" class="w-full text-left p-4 focus:outline-none bg-white ">
+            <span class="font-bold lg:text-lg sm:text-base lg:leading-5 sm:leading-1">¿Un diseño web optimizado puede determinar mi posición SEO?</span>
+          </button>
+  
+          <div x-show.transition.origin.top.duration.500ms="openTab === 1" class="overflow-hidden transition-height" style="height: auto;">
+            <div class="p-4">
+              <p class="lg:text-lg sm:text-base lg:text-justify sm:text-left">Sí, pues BytesArtsDev te ayuda a crear sitios web enfocados en el posicionamiento SEO, para que aparezcas entre los primeros buscadores y estés más cerca de tus clientes.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="border rounded-lg overflow-hidden ">
+          <button @click="openTab !== 2 ? openTab = 2 : openTab = null" class="w-full text-left p-4 focus:outline-none bg-white ">
+            <span class="font-bold lg:text-lg sm:text-base lg:leading-5 sm:leading-1">¿Dónde encuentro Desarrollo Web en Trujillo?</span>
+          </button>
+  
+          <div x-show.transition.origin.top.duration.500ms="openTab === 2" class="overflow-hidden transition-height" style="height: auto;">
+            <div class="p-4">
+              <p class="lg:text-lg sm:text-base lg:text-justify sm:text-left">Si estás buscando una agencia de Desarrollo Web para alcanzar tus objetivos, BytesArtsDev te ayuda a crear tu sitio web desde el inicio de tu proyecto y te asesora en el recorrido de él, para que mantenga la identidad de tu marca.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="border rounded-lg overflow-hidden ">
+          <button @click="openTab !== 3 ? openTab = 3 : openTab = null" class="w-full text-left p-4 focus:outline-none bg-white ">
+            <span class="font-bold lg:text-lg sm:text-base lg:leading-5 sm:leading-1">¿Mi página web también estará disponible en tablets y dispositivos?</span>
+          </button>
+  
+          <div x-show.transition.origin.top.duration.500ms="openTab === 3" class="overflow-hidden transition-height" style="height: auto;">
+            <div class="p-4">
+              <p class="lg:text-lg sm:text-base lg:text-justify sm:text-left">Sí, hoy en día es imprescindible que estés también en estos dispositivos, porque así podrás tener mayor alcance y mejores resultados de venta.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="border rounded-lg overflow-hidden ">
+          <button @click="openTab !== 4 ? openTab = 4 : openTab = null" class="w-full text-left p-4 focus:outline-none bg-white ">
+            <span class="font-bold lg:text-lg sm:text-base lg:leading-5 sm:leading-1">¿Cuánto tiempo demanda crear un sitio web?</span>
+          </button>
+  
+          <div x-show.transition.origin.top.duration.500ms="openTab === 4" class="overflow-hidden transition-height" style="height: auto;">
+            <div class="p-4">
+              <p class="lg:text-lg sm:text-base lg:text-justify sm:text-left">Puede demandar entre 4 semanas a más, dependiendo del diseño que haya elegido el cliente, pues se debe ser cuidadoso con la estructura, contenido, y si se agregará servicios de e-commerce.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </faq>
+  </div>
+  
+  <div class="rounded-lg">
+    <div class="col-lg-6 lg:order-first sm:order-last rounded-lg flex justify-center">
+      <Image 
+      class="" 
+      src={Team2} 
+      alt='Team'
+      />
+    </div>
+  </div>
+</div>
+
+
+  </section>
+
+  
+
+  <style>
+
+  </style>
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.3.0/dist/alpine.min.js" defer></script>
